@@ -1,6 +1,6 @@
 var newMod = angular.module('airlineServices', ['ngResource']);
 newMod.factory('Airport', function($resource){
-	return $resource('/airports:airportCode');
+	return $resource('/airports/:airportCode');
 });
 newMod.factory('Flights', function($resource){
 	return $resource('/flights');
