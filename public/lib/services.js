@@ -1,4 +1,7 @@
 var newMod = angular.module('airlineServices', ['ngResource']);
+
+// REST requests declared here to the Node server
+
 newMod.factory('Airport', function($resource){
 	return $resource('/airports/:airportCode');
 });
