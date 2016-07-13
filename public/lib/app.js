@@ -1,5 +1,6 @@
 var module = angular.module('airline', ['airlineServices']);
 
+//Routes are declared here
 module.config(function($routeProvider) {
 	$routeProvider
 	.when("/", {
@@ -59,6 +60,8 @@ module.controller('AppCtrl', function($scope, Airport, $routeParams) {
 	};
 	$scope.airports=Airport.query();
 });
+
+// Controllers for the different views
 
 module.controller('ReservationsCtrl', function($scope){
 	$scope.setActive('reservations');
